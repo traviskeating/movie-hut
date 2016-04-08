@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+  <style>
+    .container {
+      background-color: lightgray;
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+    
+    .content-panel {
+      background-color: black;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      width: 90%;
+      height: 75%;
+      color: white;
+    }
+    
+    .pepe {
+      float: left;
+      margin-bottom: 10px;
+    }
+    
+    .info-display {
+      float: right;
+      width: 85%;
+      background-color: darkgrey;
+      color: black;
+      height: 100px;
+      padding: 10px;
+    }
+    
+    .well {
+      margin-top: 10px;
+      overflow: scroll;
+      color: black;
+    }
+    
+    .breathing-room{
+      margin-bottom:10px;
+    }
+  </style>
+
+  <title>Movie Hut | Link Submission</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="/create" method="POST">
+      <br/> 
+      <h3>Make sure to use a stable link and be sure to be appropriate with what you post.</h3>
+      
+      <input type="text" name="video[link]" placeholder="Insert video url here">
+      <br/>
+      <input type="text" name="video[title]" placeholder="What is the video's name?">
+      <br/>
+      <input type="text" name="video[comment]" placeholder="What is this video about">
+      <br/>
+      <input class="breathing-room" type="submit">
+      
+    </form>
+    <button type="button" class="btn btn-warning" href="/">Return Home</button>
+  
+  
+  </div>
+</body>
+
+</html>
